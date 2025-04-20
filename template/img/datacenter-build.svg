@@ -1,0 +1,30 @@
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Datacenter Build</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="grad1">
+            <stop stop-color="#3FC6F1" offset="0%"></stop>
+            <stop stop-color="#5E686C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g fill="url(#grad1)" fill-rule="nonzero">
+            <!-- Outer building shape -->
+            <path d="M32.5,2 L5,20 L5,62 L60,62 L60,20 L32.5,2 Z M56,58 L9,58 L9,22.6 L32.5,7 L56,22.6 L56,58 Z" />
+            
+            <!-- Left rack -->
+            <path d="M15,34 L15,52 L24,52 L24,34 L15,34 Z M20,48 L19,48 L19,38 L20,38 L20,48 Z" />
+            
+            <!-- Center rack -->
+            <path d="M28,34 L28,52 L37,52 L37,34 L28,34 Z M33,48 L32,48 L32,38 L33,38 L33,48 Z" />
+            
+            <!-- Right rack -->
+            <path d="M41,34 L41,52 L50,52 L50,34 L41,34 Z M46,48 L45,48 L45,38 L46,38 L46,48 Z" />
+            
+            <!-- Middle shelf -->
+            <path d="M15,27 L50,27 L50,30 L15,30 Z" />
+            
+            <!-- Server indicator light -->
+            <path d="M32.5,15 C30.567,15 29,16.567 29,18.5 C29,20.433 30.567,22 32.5,22 C34.433,22 36,20.433 36,18.5 C36,16.567 34.433,15 32.5,15 Z M32.5,18 C32.776,18 33,18.224 33,18.5 C33,18.776 32.776,19 32.5,19 C32.224,19 32,18.776 32,18.5 C32,18.224 32.224,18 32.5,18 Z" />
+        </g>
+    </g>
+</svg>

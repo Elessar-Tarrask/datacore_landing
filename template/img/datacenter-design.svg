@@ -1,0 +1,30 @@
+<svg width="80" height="64" viewBox="0 0 80 64" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .primary { stroke: #5E686C; fill: #f9f9f9; }
+    .accent { stroke: #3FC6F1; fill: none; }
+    .fill-primary { fill: #5E686C; }
+  </style>
+
+  <!-- Вертикальная линейка слева -->
+  <g transform="translate(4,8)">
+    <rect width="6" height="48" rx="1" class="fill-primary"/>
+    <!-- Деления -->
+    <path d="
+      M0 2H6 M0 6H4 M0 10H6 M0 14H4 M0 18H6 
+      M0 22H4 M0 26H6 M0 30H4 M0 34H6 M0 38H4 M0 42H6" 
+      stroke="#f9f9f9" stroke-width="1"/>
+  </g>
+
+  <!-- Документ -->
+  <rect x="14" y="8" width="44" height="48" rx="2" class="primary" stroke-width="2"/>
+  <path d="M18 16H54" class="primary" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18 24H38" class="primary" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18 32H48" class="primary" stroke-width="2" stroke-linecap="round"/>
+  <path d="M18 40H42" class="primary" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Шестерёнка -->
+  <g transform="translate(44,42)">
+    <circle cx="8" cy="8" r="6" class="accent" stroke-width="2"/>
+    <path d="M8 2V0M8 16V14M2 8H0M16 8H14M3 3L1.5 1.5M13 13L14.5 14.5M3 13L1.5 14.5M13 3L14.5 1.5" class="accent" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

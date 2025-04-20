@@ -1,0 +1,49 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .primary {
+      stroke: #5E686C;
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .accent {
+      stroke: #3FC6F1;
+      stroke-width: 2;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .accent-fill {
+      fill: none;
+      stroke: #3FC6F1;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  </style>
+
+  <!-- Rounded Outer Square -->
+  <rect x="12" y="12" width="40" height="40" rx="4" ry="4" class="primary" />
+
+  <!-- Top Accent Line -->
+  <line x1="16" y1="20" x2="48" y2="20" class="accent" />
+
+  <!-- Left Circle -->
+  <circle cx="24" cy="32" r="4" class="accent-fill" />
+
+  <!-- Right-Bottom Circle -->
+  <circle cx="40" cy="44" r="4" class="accent-fill" />
+
+  <!-- Connection Line from Square to Left Circle -->
+  <line x1="12" y1="32" x2="20" y2="32" class="primary" />
+
+  <!-- Connection Line from Square to Right Circle -->
+  <line x1="40" y1="52" x2="40" y2="48" class="primary" />
+
+  <!-- Stylized “_ / -” Line -->
+  <polyline points="12,42 24,42 36,36 52,32" class="primary" />
+
+  <!-- Bigger Checkmark for Reliability -->
+  <polyline points="44,8 50,16 60,4" class="accent" />
+</svg>
