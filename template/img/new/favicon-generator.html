@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DataCore Favicon Generator</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+    #download {
+      padding: 10px 20px;
+      background-color: #4a63b9;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #download:hover {
+      background-color: #3a53a9;
+    }
+  </style>
+</head>
+<body>
+  <h1>DataCore Favicon Generator</h1>
+  <canvas id="favicon" width="64" height="64"></canvas>
+  <button id="download">Download Favicon</button>
+
+  <script>
+    // Get the canvas and context
+    const canvas = document.getElementById('favicon');
+    const ctx = canvas.getContext('2d');
+    
+    // Clear canvas with a gradient background
+    const gradient = ctx.createLinearGradient(0, 0, 64, 64);
+    gradient.addColorStop(0, '#4a63b9');
+    gradient.addColorStop(1, '#6e43b5');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, 64, 64);
+    
+    // Draw the "D" letter
+    ctx.fillStyle = 'white';
+    ctx.font = 'bold 48px Arial';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('D', 32, 32);
+    
+    // Setup download handler
+    document.getElementById('download').addEventListener('click', function() {
+      const link = document.createElement('a');
+      link.download = 'favicon.ico';
+      link.href = canvas.toDataURL('image/png');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+  </script>
+</body>
+</html> 
